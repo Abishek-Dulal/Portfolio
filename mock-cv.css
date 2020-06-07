@@ -1,0 +1,284 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+:root{
+    --primary-color:#2739A1;
+    --secondary-color:#E36D42;
+    --third-color:#1F79A6;
+    --quad-color:#A6820F;
+    --penta-color:#17A68A;
+}
+
+header{
+     background-color: var(--primary-color);
+     height:60px;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     position: sticky;
+     top:0px;
+}
+
+nav a{
+    color:white;
+    font-size:25px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+  text-shadow: 3px 3px black;
+  font-size: 42px;
+}
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background-color: #000;
+  justify-content: center; 
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  text-align: center;
+}
+
+#welcome-section>h1{
+    font-size: 50px;     
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#welcome-section>p::after{
+    content: "> Software Developer_";
+    font-size: 25px;
+    color:white;
+    animation-name: blinker;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes blinker{
+    0%{
+        content :"> _";
+     }  
+     5%{
+        content :"> S_";
+     } 
+     10%{
+        content :"> So_";
+     } 
+     15%{
+        content :"> Sof_";
+     } 
+     20%{
+        content :"> Soft_";
+     } 
+     25%{
+        content :"> Softw_";
+     } 
+     30%{
+        content :"> Softwa_";
+     }
+    40%{
+        content :"> Softwar_";
+     } 
+     45%{
+        content :"> Software_";
+     } 
+     50%{
+        content :"> Software _";
+     }
+     
+     55%{
+        content :"> Software D_";
+     } 
+
+     60%{
+        content :"> Software De_";
+     } 
+
+     65%{
+        content :"> Software Dev_";
+     } 
+
+     70%{
+        content :"> Software Devel_";
+     } 
+
+     75%{
+        content :"> Software Develo_";
+     } 
+
+     80%{
+        content :"> Software Develop_";
+     } 
+
+     85%{
+        content :"> Software Develope_";
+     }
+     
+     90%{
+       content: "> Software Developer_";
+     }
+
+     95%{
+       content: "> Software Developer";
+     }
+
+    
+    100%{
+       content: ">      Software Developer_";
+    }
+     
+
+}
+
+#projects{
+    background-color: #be3144;  
+}
+
+.project-title{
+    padding: 60px 0px 60px 0px;
+    text-align: center;
+    font-size: 45px ;
+    color: white;
+    text-decoration: underline;
+}
+
+#project-list{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit,300px);
+    margin: 20px;
+    gap:40px 40px;
+}
+
+.project-tile{
+    height:350px ;
+    width:300px;
+}
+
+.tile-image{
+   width:100%;
+   height:300px;
+}
+
+.tile-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.tile-title{
+   display: flex;
+   width: 100%;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   background:#303841; 
+   border-top: 1px solid gray;
+}
+
+.tile-title a{
+
+   text-decoration: none;
+   color:white;
+
+}
+
+
+.code{
+  color: rgba(255, 72, 0, 0.842);
+   opacity: 0%;
+}
+
+.project-tile:hover  .code{
+  transition: opacity 0.3s ease-in;
+  opacity: 100%;
+}
+
+#view-more{
+   text-align: center;
+   font-size: x-large;
+   padding: 20px;
+}
+
+#view-more a{
+   color: white;
+   background-color: #303841 ;
+   text-decoration: none;
+   padding: 5px 5px 5px 15px;
+}
+
+#view-more img{
+   width: 20px;
+   height: 20px ;
+   color: white;
+}
+
+#view-more a:hover{
+   transition: 0.2s padding;
+   padding: 7px 7px 7px 17px;   
+}
+
+
+#language{
+   width: 100%;
+   background-color:var(--penta-color);
+   padding-bottom: 60px;
+}
+
+.language-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.language-img{
+   height: 250px;
+   width: 250px;
+}
+
+.language-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.language-img img:hover{
+   border: 5px solid #be3144;
+}
+
+
+#frameworks{
+   background-color: purple;
+   padding-bottom: 40px;
+}
+
+#contacts{
+   background-color: royalblue;
+   padding-bottom: 50px;
+   border-bottom: 5px solid magenta;
+}
+
+footer{
+   height: 50px;
+   background-color: #303841 ;
+   color: white;
+   text-align: end;
+   font-size: xx-large;
+}
+
+footer div{
+   padding-top: 5px;
+   margin-right: 20px;
+}
